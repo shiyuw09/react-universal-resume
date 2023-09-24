@@ -17,7 +17,7 @@ function Education({ eduArray }: EducationProps) {
                 {edu.name}
               </h3>
               <p className="leading-normal text-md text-gray-650">
-                {edu.degree} | {edu.date}
+                {edu.date} | {edu.degree}
               </p>
 
               <ul>
