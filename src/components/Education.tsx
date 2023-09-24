@@ -1,21 +1,38 @@
-import MyH2 from "./MyH2";
+import MyH2 from './MyH2';
+import { EducationInfo } from '..';
 
 interface EducationProps {
-  name: string;
-  degree: string;
-  date: string;
-  courses: string[];
+  eduArray: EducationInfo[];
 }
 
-function Education(props: EducationProps) {
+function Education({ eduArray }: EducationProps) {
   return (
-    <div className="mb-16">
-      <MyH2 text="Education" />
-      <h3 >{props.name}</h3>
-      <p>{props.degree}</p>
-      <p>{props.date}</p>
-      <p>{props.courses.join(', ')}</p>
-    </div>
+    <section className="mb-8 first:mt-0">
+      <div className="break-inside-avoid">
+        <MyH2 text="Education" />
+        {eduArray.map((edu: EducationInfo, index: number) => (
+          <section key={index} className="break-inside-avoid mb-4.5">
+            <header>
+              <h3 className="text-lg font-semibold text-gray-700 leading-snugish">
+                {edu.name}
+              </h3>
+              <p className="leading-normal text-md text-gray-650">
+                {edu.degree} | {edu.date}
+              </p>
+
+              <ul>
+                <li className="mt-2.1 text-md text-gray-700 leading-normal">
+                  <span className="-ml-3 absolute select-none -translate-y-px transform">
+                    ›
+                  </span>
+                  Relevant course work: {edu.courses.join(', ')}
+                </li>
+              </ul>
+            </header>
+          </section>
+        ))}
+      </div>
+    </section>
   );
 }
 
