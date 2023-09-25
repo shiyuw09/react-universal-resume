@@ -130,7 +130,7 @@ export const experienceWork: IWorkExperience[] = [
   },
 ];
 
-export const experienceTesting: ITestingExperience[] = [
+export const experienceTesting: IWorkExperience[] = [
   {
     type: 'work experience',
     companyDescription: '',
