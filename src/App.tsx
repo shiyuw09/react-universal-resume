@@ -72,7 +72,10 @@ function App() {
             Inspiried by{' '}
             <div className="underline inline-block">
               <Github className="inline-block w-5 h-5 -mt-1 -mr-1" />{' '}
-              <a href="https://github.com/WebPraktikos/universal-resume">
+              <a
+                href="https://github.com/WebPraktikos/universal-resume"
+                target="_blank"
+              >
                 WebPraktikos/universal-resume
               </a>
             </div>
