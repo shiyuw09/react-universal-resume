@@ -12,7 +12,7 @@ function App() {
     <>
       <main className="font-firago mx-auto text-left">
         {/* Page */}
-        <div className="bg-white p-6 mx-auto">
+        <div className="bg-white p-6 mx-auto max-w-2xl print:max-w-a4 md:max-w-a4 md:h-a4 md:p-16">
           {/* Name */}
           <header className="mb-8">
             <h1 className="text-2xl font-semibold text-gray-750 pb-px">

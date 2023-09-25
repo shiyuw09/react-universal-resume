@@ -9,7 +9,7 @@ interface ProjectProps {
 
 function Project({ projects }: ProjectProps) {
   return (
-    <div className="break-inside-avoid">
+    <div>
       <MyH2 text="Projects" />
 
       {projects.map((project: IProject, index: number) => (

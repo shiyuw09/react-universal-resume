@@ -33,6 +33,14 @@ export default {
         "letter": "66.40625rem",
         "a4": "64.609375rem"
       },
+      height: {
+        "letter": "85.9375rem",
+        "letter-col": "71.625rem",
+        "letter-col-full": "77.9375rem",
+        "a4": "91.350883rem",
+        "a4-col": "77.038383rem",
+        "a4-col-full": "83.350883rem",
+      },
       spacing: {
         0.5: '2px', // 2px
         1.5: '0.375rem', // 6px
