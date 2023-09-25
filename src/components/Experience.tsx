@@ -12,7 +12,7 @@ function Experience({ expArray }: ExperienceProps) {
 
   return (
     <section className="mb-8 first:mt-0">
-      <div className="break-inside-avoid">
+      <div>
         <MyH2 text={type} />
         {expArray.map((exp: IWorkExperience, index: number) => (
           <section key={index} className="mb-4.5 break-inside-avoid">

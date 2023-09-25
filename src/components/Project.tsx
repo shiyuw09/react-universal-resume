@@ -10,7 +10,7 @@ interface ProjectProps {
 function Project({ projects }: ProjectProps) {
   return (
     <section className="mb-8 first:mt-0">
-      <div className="break-inside-avoid">
+      <div>
         <MyH2 text="Projects" />
 
         {projects.map((project: IProject, index: number) => (

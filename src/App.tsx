@@ -11,6 +11,9 @@ import {
   experienceWork,
   projectsInfo,
 } from './data';
+import reactLogo from './assets/react.svg';
+import tsLogo from './assets/ts-logo-128.svg';
+import viteLogo from '/vite.svg';
 
 function App() {
   return (
@@ -30,12 +33,45 @@ function App() {
           <Project projects={projectsInfo} />
           <Experience expArray={experienceIntern} />
         </div>
-        <div className="bg-white p-6 mx-auto mb-2 max-w-2xl print:max-w-a4 md:max-w-a4 md:h-a4 md:p-16">
+        {/* end Page */}
+        {/* Page */}
+        <div className="bg-white p-6 mx-auto mb-2 max-w-2xl print:max-w-a4 md:max-w-a4  md:p-16">
           <Experience expArray={experienceWork} />
           {/* <TestingExp expArray={experienceTesting} /> */}
           <Skills skills={[]} />
           <Contact />
         </div>
+        <footer>
+          <div className="flex justify-center items-center text-center">
+            <span className="text-gray-650"> Made with </span>
+            {/* <Heart className="inline-block w-4 text-red-500" />{' '} */}
+            <a
+              href="https://vitejs.dev"
+              target="_blank"
+              className="inline-block"
+            >
+              <img src={viteLogo} className="logo" alt="Vite logo" />
+            </a>
+            <a
+              href="https://react.dev"
+              target="_blank"
+              className="inline-block"
+            >
+              <img src={reactLogo} className="logo react" alt="React logo" />
+            </a>
+            <a
+              href="https://www.typescriptlang.org/"
+              target="_blank"
+              className="inline-block"
+            >
+              <img src={tsLogo} className="logo" alt="TypeScript logo" />
+            </a>
+          </div>
+          <p className="text-center text-gray-650 text-xs">
+            Last updated: 25 Sep, 2023
+          </p>
+        </footer>
+        {/* end Page */}
       </main>
     </>
   );
