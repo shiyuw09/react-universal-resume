@@ -1,32 +1,43 @@
-import MyH2 from "./MyH2";
+import { IWorkExperience } from '..';
+import Labels from './Labels';
+import ListItems from './ListItems';
+import MyH2 from './MyH2';
 
 interface ExperienceProps {
-  type: "internship" | "work experience";
-  company: string;
-  role: string;
-  date: string;
-  description: string;
-  technologies: string[];
-  responsibilities: string[];
+  expArray: IWorkExperience[];
 }
 
-function Experience(props: ExperienceProps) {
+function Experience({ expArray }: ExperienceProps) {
+  const type: string = expArray[0].type;
+
   return (
-    <div className="mb-16">
-      <MyH2 text={props.type} />
-      <h3>
-        {props.company}
-      </h3>
-      <p>{props.role}</p>
-      <p>{props.date}</p>
-      <p>{props.description}</p>
-      <p>
-        {props.technologies.join(", ")}
-      </p>
-      <p className="text-gray-750 pb-px">
-        {props.responsibilities.join(", ")}
-      </p>
-    </div>
+    <section className="mb-8 first:mt-0">
+      <div className="break-inside-avoid">
+        <MyH2 text={type} />
+        {expArray.map((exp: IWorkExperience, index: number) => (
+          <section key={index} className="mb-4.5 break-inside-avoid">
+            <header>
+              <div className="flex justify-between">
+                <h3 className="text-lg font-semibold text-gray-700 leading-snugish group mb-2.1 italic">
+                  {exp.role}
+                </h3>
+                <Labels labels={exp.technologies} />
+              </div>
+              <p className="leading-normal text-md text-gray-650">
+                {exp.date} | {exp.company}
+              </p>
+            </header>
+            <p
+              className="mt-1
+             text-md text-gray-700 leading-normal italic"
+            >
+              {exp.companyDescription}
+            </p>
+            <ListItems items={exp.responsibilities} />
+          </section>
+        ))}
+      </div>
+    </section>
   );
 }
 

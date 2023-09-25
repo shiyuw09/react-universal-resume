@@ -1,4 +1,4 @@
-import { IEducation, IProject } from '.';
+import { IEducation, IProject, IWorkExperience } from '.';
 
 /* Education Info */
 export const educationData: IEducation[] = [
@@ -52,7 +52,7 @@ export const projectsInfo: IProject[] = [
     name: 'iQue Platform',
     description:
       'A platform providing queue information and online queuing service for various shops, including websites for both merchants and customers.',
-    date: 'Oct 2022 – Sep 2022',
+    date: 'Sep 2022 – Oct 2022',
     technologies: ['Vue.js', 'Tailwind CSS', 'PWA', 'JavaScript'],
     github: 'https://github.com/nus-star6ucks/ique-qms',
     role: 'Full Stack Developer',
@@ -65,5 +65,97 @@ export const projectsInfo: IProject[] = [
       'Set up Google Cloud SQL, Storage, GKE (Kubernetes Engine), and Ingress load balancer to achieve high availability and scalability of the application.',
     ],
     company: 'National University of Singapore',
+  },
+];
+
+export const experienceIntern: IWorkExperience[] = [
+  {
+    type: 'internship',
+    company: 'LDR Pte Ltd, Singapore',
+    role: 'Full Stack Developer',
+    date: 'Mar 2023 – Aug 2023',
+    companyDescription: "Rebuild the company's Content Management System",
+    technologies: ['React', 'Tailwind CSS', 'Radix UI', 'TypeScript'],
+    responsibilities: [
+      'Developed user and content management features for CMS.',
+      'Created unit tests with Vitest, Jest, and React Testing Library.',
+      'Set up CI/CD pipeline with GitHub Actions & AWS Fargate.',
+      'Built backend services on the Appwrite platform.',
+    ],
+    responsibilitySummary: '',
+  },
+];
+
+export const experienceWork: IWorkExperience[] = [
+  {
+    type: 'work experience',
+    company: 'Yuanfudao, Beijing, China',
+    role: 'Software Development Engineer in Test',
+    date: 'Jun 2015 - Sep 2021',
+    companyDescription: 'Top 3 largest online education company in China',
+    technologies: ['Vue.js', 'Java'],
+    responsibilities: [
+      'Developed features for the front-end website for the integration testing platform written in Vue.js.',
+      'Designed and implemented automated tests based on project requirements, utilising technologies such as Junit and Swagger Codegen to create regression tests and end-to-end integration tests of APIs.',
+      'Familiar with basic Git operations and the code deployment process, participated in code reviews for all unit tests written by developers.',
+    ],
+    responsibilitySummary: '',
+  },
+  {
+    type: 'work experience',
+    companyDescription: '',
+    technologies: [],
+    responsibilitySummary: 'Functional Testing / UI Automation Testing',
+    responsibilities: [
+      'Responsible for all functional tests for the company’s mobile client, including iOS, Android, and H5.',
+      'Created UI automation tests with Selenium to achieve UI regression testing for the web application.',
+    ],
+    company: 'Lvmama Tourism, Shanghai, China',
+    date: 'Aug 2014 - Jun 2015',
+    role: 'Software Test Engineer',
+  },
+  {
+    type: 'work experience',
+    companyDescription: '',
+    technologies: [],
+    responsibilities: [
+      'Developed features for the front-end website for the integration testing platform written in Vue.js.',
+      'Designed and implemented automated tests based on project requirements, utilising technologies such as Junit and Swagger Codegen to create regression tests and end-to-end integration tests of APIs.',
+      'Familiar with basic Git operations and the code deployment process, participated in code reviews for all unit tests written by developers.',
+    ],
+    company: 'Aidingke, Shanghai, China',
+    date: 'May 2013 - Jul 2014',
+    role: 'Software Test Engineer',
+    responsibilitySummary: 'Functional Testing / SVN Version Control',
+  },
+];
+
+export const experienceTesting: ITestingExperience[] = [
+  {
+    type: 'work experience',
+    companyDescription: '',
+    technologies: [],
+    responsibilitySummary: 'Functional Testing / UI Automation Testing',
+    responsibilities: [
+      'Responsible for all functional tests for the company’s mobile client, including iOS, Android, and H5.',
+      'Created UI automation tests with Selenium to achieve UI regression testing for the web application.',
+    ],
+    company: 'Lvmama Tourism, Shanghai, China',
+    date: 'Aug 2014 - Jun 2015',
+    role: 'Software Test Engineer',
+  },
+  {
+    type: 'work experience',
+    companyDescription: '',
+    technologies: [],
+    responsibilities: [
+      'Developed features for the front-end website for the integration testing platform written in Vue.js.',
+      'Designed and implemented automated tests based on project requirements, utilising technologies such as Junit and Swagger Codegen to create regression tests and end-to-end integration tests of APIs.',
+      'Familiar with basic Git operations and the code deployment process, participated in code reviews for all unit tests written by developers.',
+    ],
+    company: 'Aidingke, Shanghai, China',
+    date: 'May 2013 - Jul 2014',
+    role: 'Software Test Engineer',
+    responsibilitySummary: 'Functional Testing / SVN Version Control',
   },
 ];

@@ -5,7 +5,12 @@ import Education from './components/Education';
 import Experience from './components/Experience';
 import Project from './components/Project';
 import Skills from './components/Skills';
-import { educationData, projectsInfo } from './data';
+import {
+  educationData,
+  experienceIntern,
+  experienceWork,
+  projectsInfo,
+} from './data';
 
 function App() {
   return (
@@ -23,24 +28,9 @@ function App() {
           <AboutMe />
           <Education eduArray={educationData} />
           <Project projects={projectsInfo} />
-          <Experience
-            type={'internship'}
-            company={''}
-            role={''}
-            date={''}
-            description={''}
-            technologies={[]}
-            responsibilities={[]}
-          />
-          <Experience
-            type={'work experience'}
-            company={''}
-            role={''}
-            date={''}
-            description={''}
-            technologies={[]}
-            responsibilities={[]}
-          />
+          <Experience expArray={experienceIntern} />
+          <Experience expArray={experienceWork} />
+          {/* <TestingExp expArray={experienceTesting} /> */}
           <Skills skills={[]} />
           <Contact />
         </div>

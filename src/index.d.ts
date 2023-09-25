@@ -15,3 +15,14 @@ export interface IProject {
   responsibilities: string[];
   company: string;
 }
+
+export interface IWorkExperience {
+  type: string;
+  company: string;
+  role: string;
+  date: string;
+  companyDescription: string;
+  technologies: string[];
+  responsibilities: string[];
+  responsibilitySummary: string;
+}
