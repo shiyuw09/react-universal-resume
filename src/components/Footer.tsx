@@ -5,7 +5,7 @@ import tsLogo from '/ts-logo-128.svg';
 
 function Footer() {
   return (
-    <footer>
+    <footer className="print:hidden">
       <div className="flex justify-center items-center text-center">
         <span className="text-gray-700"> Made with </span>
         {/* <Heart className="inline-block w-4 text-red-500" />{' '} */}
