@@ -14,6 +14,7 @@ import {
 import reactLogo from './assets/react.svg';
 import tsLogo from './assets/ts-logo-128.svg';
 import viteLogo from '/vite.svg';
+import { Github } from 'lucide-react';
 
 function App() {
   return (
@@ -43,7 +44,7 @@ function App() {
         </div>
         <footer>
           <div className="flex justify-center items-center text-center">
-            <span className="text-gray-650"> Made with </span>
+            <span className="text-gray-700"> Made with </span>
             {/* <Heart className="inline-block w-4 text-red-500" />{' '} */}
             <a
               href="https://vitejs.dev"
@@ -67,7 +68,16 @@ function App() {
               <img src={tsLogo} className="logo" alt="TypeScript logo" />
             </a>
           </div>
-          <p className="text-center text-gray-650 text-xs">
+          <p className="text-center text-gray-700">
+            Inspiried by{' '}
+            <div className="underline inline-block">
+              <Github className="inline-block w-5 h-5 -mt-1 -mr-1" />{' '}
+              <a href="https://github.com/WebPraktikos/universal-resume">
+                WebPraktikos/universal-resume
+              </a>
+            </div>
+          </p>
+          <p className="text-center text-gray-650 text-xs italic mt-2">
             Last updated: 25 Sep, 2023
           </p>
         </footer>
