@@ -29,6 +29,8 @@ function App() {
           <Education eduArray={educationData} />
           <Project projects={projectsInfo} />
           <Experience expArray={experienceIntern} />
+        </div>
+        <div className="bg-white p-6 mx-auto mb-2 max-w-2xl print:max-w-a4 md:max-w-a4 md:h-a4 md:p-16">
           <Experience expArray={experienceWork} />
           {/* <TestingExp expArray={experienceTesting} /> */}
           <Skills skills={[]} />
