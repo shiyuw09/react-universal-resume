@@ -69,7 +69,7 @@ function App() {
             </a>
           </div>
           <p className="text-center text-gray-700">
-            Inspiried by{' '}
+            Inspired by{' '}
             <div className="underline inline-block">
               <Github className="inline-block w-5 h-5 -mt-1 -mr-1" />{' '}
               <a
