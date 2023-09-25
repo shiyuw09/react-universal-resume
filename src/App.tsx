@@ -1,17 +1,15 @@
 import './App.css';
-import AboutMe from './components/AboutMe';
 import Contact from './components/Contact';
 import Education from './components/Education';
 import Experience from './components/Experience';
+import Footer from './components/Footer';
 import Project from './components/Project';
-import Skills from './components/Skills';
 import {
   educationData,
   experienceIntern,
   experienceWork,
   projectsInfo,
 } from './data';
-import Footer from './components/Footer';
 
 function App() {
   return (
