@@ -1,16 +1,28 @@
-import MyH2 from "./MyH2";
+import { ISkill } from '..';
+import MyH2 from './MyH2';
 
 interface skillsProps {
-  skills: string[];
+  skills: ISkill[];
 }
 
-function Skills(props: skillsProps) {
+function Skills({ skills }: skillsProps) {
   return (
-    <div className="mb-16">
+    <div className="mb-8">
       <MyH2 text="Skills" />
       <ul>
-        {props.skills.map((skill) => (
-          <li key={skill}>{skill}</li>
+        {skills.map((skillOb, index) => (
+          // group by level
+          <li
+            key={skillOb.level}
+            className={`capitalize ${index < 2 ? 'h-7' : ''}`}
+          >
+            <div className="flex">
+              <p className="text-gray-700 leading-normal mr-3">{`${skillOb.level}:`}</p>
+              <p className="text-gray-700 leading-normal">
+                {skillOb.skills.join(', ')}
+              </p>
+            </div>
+          </li>
         ))}
       </ul>
     </div>

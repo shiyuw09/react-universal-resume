@@ -1,4 +1,4 @@
-import { IContact, IEducation, IProject, IWorkExperience } from '.';
+import { IContact, IEducation, IProject, ISkill, IWorkExperience } from '.';
 
 // Contact Information
 export const contactInfo: IContact = {
@@ -112,5 +112,27 @@ export const experienceIntern: IWorkExperience[] = [
     ],
     responsibilitySummary:
       'Survived a year without becoming dino dinner, while making the site better.',
+  },
+];
+
+export const skills: ISkill[] = [
+  {
+    level: 'advanced',
+    skills: [
+      'JavaScript',
+      'React',
+      'Tailwind CSS',
+      'Git',
+      'Webpack',
+      'State Management',
+    ],
+  },
+  {
+    level: 'familiar',
+    skills: ['HTML', 'CSS', 'Firebase', 'TypeScript'],
+  },
+  {
+    level: 'used',
+    skills: ['Node.js', 'Docker', 'AWS', 'GraphQL', 'Redux'],
   },
 ];

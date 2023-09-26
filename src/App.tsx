@@ -12,6 +12,7 @@ import {
   experienceWork,
   contactInfo,
   projectsInfo,
+  skills,
 } from './data';
 
 function App() {
@@ -28,11 +29,11 @@ function App() {
           </header>
           {/* end Name */}
           <AboutMe />
+          <Skills skills={skills} />
           <Education eduArray={educationData} />
           <Project projects={projectsInfo} />
           <Experience expArray={experienceIntern} />
           <Experience expArray={experienceWork} />
-          <Skills skills={[]} />
           <Contact contact={contactInfo} />
         </div>
         <Footer />

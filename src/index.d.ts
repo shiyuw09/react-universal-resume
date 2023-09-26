@@ -34,3 +34,8 @@ export interface IWorkExperience {
   responsibilities: string[];
   responsibilitySummary: string;
 }
+
+export interface ISkill {
+  level: string; // 1-5
+  skills: string[];
+}
