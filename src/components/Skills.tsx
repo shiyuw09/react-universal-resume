@@ -17,8 +17,8 @@ function Skills({ skills }: skillsProps) {
             className={`capitalize ${index < 2 ? 'h-7' : ''}`}
           >
             <div className="flex">
-              <p className="text-gray-700 leading-normal mr-3">{`${skillOb.level}:`}</p>
-              <p className="text-gray-700 leading-normal">
+              <p className="text-gray-700 leading-normal mr-3 absolute font-semibold">{`${skillOb.level}:`}</p>
+              <p className="text-gray-700 leading-normal ml-24">
                 {skillOb.skills.join(', ')}
               </p>
             </div>
