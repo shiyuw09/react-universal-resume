@@ -1,161 +1,97 @@
-import { IEducation, IProject, IWorkExperience } from '.';
+import { IContact, IEducation, IProject, IWorkExperience } from '.';
 
-/* Education Info */
+export const contactInfo: IContact = {
+  name: 'John Doe',
+  phone: '(123) 456-7890',
+  email: 'johndoe@gmail.com',
+  github: 'github.com/johndoe',
+  linkedin: 'linkedin.com/in/johndoe',
+  blog: 'johndoe.com',
+};
+
+/* Sample Education Info */
 export const educationData: IEducation[] = [
   {
-    name: 'National University of Singapore',
-    degree: 'Master of Technology in Software Engineering',
-    date: '2022 - 2023',
+    name: 'Stanford University',
+    degree: 'Master of Computer Science',
+    date: '2018 - 2020',
     courses: [
-      'Architecting Software Solutions',
-      'DevOps Engineering and Automation',
-      'Cloud Native Solution Design',
-      'Architecting IoT Solutions',
-      'Edge Computing',
-      'Cloud Computing',
-      'Humanizing Smart Systems',
+      'Machine Learning',
+      'Natural Language Processing',
+      'Computer Vision',
     ],
   },
   {
-    name: 'Huazhong University of Science and Technology, China',
-    degree: 'Information Management and Information Systems',
-    // degree:
-    //   'Bachelor of Management in Information Management and Information Systems',
-    date: '2008 - 2012',
-    courses: [
-      'Object-Oriented Programming',
-      'Data Structure',
-      'Database Management',
-      'C Programming',
-    ],
+    name: 'University of Michigan',
+    degree: 'Bachelor of Computer Science',
+    date: '2014 - 2018',
+    courses: ['Data Structures', 'Operating Systems', 'Web Development'],
   },
 ];
 
-/* Project Info */
+/* Sample Project Info */
 export const projectsInfo: IProject[] = [
   {
-    name: 'IoT-based Fall Detection System for Home Safety',
+    name: 'HealthMate',
     description:
-      'Used IoT and cloud computing technologies with wearables, edge devices, and intelligent algorithms for real-time fall detection and timely notifications.',
-    date: 'Jan 2023 – May 2023',
-    technologies: ['JavaScript', 'Python', 'AWS'],
-    github: 'https://github.com/NUS-ArchSS/fall-detection-iot-solution',
-    role: 'Full Stack Developer',
+      'A healthcare platform for tracking patient vitals and medical history.',
+    date: 'Jan 2020 – Apr 2020',
+    technologies: ['React', 'Node.js', 'MongoDB'],
+    github: 'https://github.com/username/HealthMate',
+    role: 'Back-End Developer',
     responsibilities: [
-      'Created JavaScript applications on Bangle.js 2 smartwatch to collect sensor data for fall detection.',
-      'Developed Python applications on Raspberry Pi for data processing, storage, and uploading data to AWS for analysis.',
-      'Integrated AWS IoT Core, IoT Greengrass, and Amazon SNS to enable device automation and real-time user notifications via SMS and email.',
+      'Implemented RESTful APIs for patient data management.',
+      'Integrated authentication and authorization using JWT.',
+      'Wrote unit tests using Jest and Mocha.',
     ],
-    company: 'National University of Singapore',
+    company: 'Stanford University',
   },
   {
-    name: 'iQue Platform',
-    description:
-      'A platform providing queue information and online queuing service for various shops, including websites for both merchants and customers.',
-    date: 'Sep 2022 – Oct 2022',
-    technologies: ['Vue.js', 'Tailwind CSS', 'PWA', 'JavaScript'],
-    github: 'https://github.com/nus-star6ucks/ique-qms',
-    role: 'Full Stack Developer',
+    name: 'Budgetify',
+    description: 'A budget management app for personal finance.',
+    date: 'May 2020 – July 2020',
+    technologies: ['Flutter', 'Firebase', 'Dart'],
+    github: 'https://github.com/username/Budgetify',
+    role: 'Mobile App Developer',
     responsibilities: [
-      'Developed key features of merchant pages (Vue.js) - register, login, manage queues, call customers, send notifications etc.',
-      'Developed core features of backend microservices - queue service (Java, Spring Boot).',
-      'Integrated Cloud Firebase, OneSignal, and PWA for notifications.',
-      'Created unit tests based on technologies such as JUnit and Mockito.',
-      'Integrated GitHub Actions & Google Cloud Build for CI/CD pipeline.',
-      'Set up Google Cloud SQL, Storage, GKE (Kubernetes Engine), and Ingress load balancer to achieve high availability and scalability of the application.',
+      'Designed and implemented the app UI using Flutter.',
+      'Integrated Firebase for real-time data sync across devices.',
+      'Set up GitHub Actions for CI/CD.',
     ],
-    company: 'National University of Singapore',
+    company: 'Self',
   },
 ];
 
+/* Sample Work Experience Info - Internships */
 export const experienceIntern: IWorkExperience[] = [
   {
     type: 'internship',
-    company: 'LDR Pte Ltd, Singapore',
-    role: 'Full Stack Developer',
-    date: 'Mar 2023 – Aug 2023',
-    companyDescription: "Rebuild the company's Content Management System",
-    technologies: ['React', 'Tailwind CSS', 'Radix UI', 'TypeScript'],
+    company: 'Facebook, USA',
+    role: 'Software Engineer Intern',
+    date: 'May 2019 – Aug 2019',
+    companyDescription: 'Worked in the social graph team.',
+    technologies: ['Python', 'GraphQL'],
     responsibilities: [
-      'Developed user and content management features for CMS.',
-      'Created unit tests with Vitest, Jest, and React Testing Library.',
-      'Set up CI/CD pipeline with GitHub Actions & AWS Fargate.',
-      'Built backend services on the Appwrite platform.',
+      'Implemented features for the social graph.',
+      'Optimized database queries for performance.',
     ],
-    responsibilitySummary: '',
+    responsibilitySummary: 'Worked on back-end features and optimizations.',
   },
 ];
 
+/* Sample Work Experience Info - Full-Time Jobs */
 export const experienceWork: IWorkExperience[] = [
   {
     type: 'work experience',
-    company: 'Yuanfudao, Beijing, China',
-    role: 'Software Development Engineer in Test',
-    date: 'Jun 2015 - Sep 2021',
-    companyDescription: 'Top 3 largest online education company in China',
-    technologies: ['Vue.js', 'Java'],
+    company: 'Google, USA',
+    role: 'Software Engineer',
+    date: 'Jan 2021 - Present',
+    companyDescription: 'Working in the Search team.',
+    technologies: ['C++', 'Python'],
     responsibilities: [
-      'Developed features for the front-end website for the integration testing platform written in Vue.js.',
-      'Designed and implemented automated tests based on project requirements, utilising technologies such as Junit and Swagger Codegen to create regression tests and end-to-end integration tests of APIs.',
-      'Familiar with basic Git operations and the code deployment process, participated in code reviews for all unit tests written by developers.',
+      'Implemented new features for Google Search.',
+      'Worked on code optimizations for low-latency searching.',
     ],
-    responsibilitySummary: '',
-  },
-  {
-    type: 'work experience',
-    companyDescription: '',
-    technologies: [],
-    responsibilitySummary: 'Functional Testing / UI Automation Testing',
-    responsibilities: [
-      'Responsible for all functional tests for the company’s mobile client, including iOS, Android, and H5.',
-      'Created UI automation tests with Selenium to achieve UI regression testing for the web application.',
-    ],
-    company: 'Lvmama Tourism, Shanghai, China',
-    date: 'Aug 2014 - Jun 2015',
-    role: 'Software Test Engineer',
-  },
-  {
-    type: 'work experience',
-    companyDescription: '',
-    technologies: [],
-    responsibilities: [
-      'Developed features for the front-end website for the integration testing platform written in Vue.js.',
-      'Designed and implemented automated tests based on project requirements, utilising technologies such as Junit and Swagger Codegen to create regression tests and end-to-end integration tests of APIs.',
-      'Familiar with basic Git operations and the code deployment process, participated in code reviews for all unit tests written by developers.',
-    ],
-    company: 'Aidingke, Shanghai, China',
-    date: 'May 2013 - Jul 2014',
-    role: 'Software Test Engineer',
-    responsibilitySummary: 'Functional Testing / SVN Version Control',
-  },
-];
-
-export const experienceTesting: IWorkExperience[] = [
-  {
-    type: 'work experience',
-    companyDescription: '',
-    technologies: [],
-    responsibilitySummary: 'Functional Testing / UI Automation Testing',
-    responsibilities: [
-      'Responsible for all functional tests for the company’s mobile client, including iOS, Android, and H5.',
-      'Created UI automation tests with Selenium to achieve UI regression testing for the web application.',
-    ],
-    company: 'Lvmama Tourism, Shanghai, China',
-    date: 'Aug 2014 - Jun 2015',
-    role: 'Software Test Engineer',
-  },
-  {
-    type: 'work experience',
-    companyDescription: '',
-    technologies: [],
-    responsibilities: [
-      'Developed features for the front-end website for the integration testing platform written in Vue.js.',
-      'Designed and implemented automated tests based on project requirements, utilising technologies such as Junit and Swagger Codegen to create regression tests and end-to-end integration tests of APIs.',
-      'Familiar with basic Git operations and the code deployment process, participated in code reviews for all unit tests written by developers.',
-    ],
-    company: 'Aidingke, Shanghai, China',
-    date: 'May 2013 - Jul 2014',
-    role: 'Software Test Engineer',
-    responsibilitySummary: 'Functional Testing / SVN Version Control',
+    responsibilitySummary: 'Full-stack developer in the Search team.',
   },
 ];

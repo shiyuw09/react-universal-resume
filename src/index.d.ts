@@ -1,3 +1,11 @@
+export interface IContact {
+  name: string;
+  phone: string;
+  email: string;
+  github: string;
+  linkedin: string;
+  blog: string;
+}
 export interface IEducation {
   name: string;
   degree: string;
