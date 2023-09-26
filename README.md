@@ -1,4 +1,4 @@
-# React Resume Template
+# React Universal Resume
 
 
 
@@ -26,7 +26,7 @@
 1. Navigate to the project's directory
 
    ```shell
-   cd react-resume-template
+   cd react-universal-resume
    ```
 
 2. Install dependencies
