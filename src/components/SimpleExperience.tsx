@@ -22,7 +22,7 @@ function TestingExp({ expArray }: TestingExpProps) {
                 </p>
               </div>
               <p className="text-gray-650 leading-normal">
-                {exp.companyDescription}
+                {exp.responsibilitySummary}
               </p>
             </div>
           </section>
