@@ -1,4 +1,4 @@
-import { Github, Mail, Phone } from 'lucide-react';
+import { Github, Linkedin, Mail, Phone, ScrollText } from 'lucide-react';
 import MyH2 from './MyH2';
 import { IContact } from '..';
 
@@ -20,7 +20,33 @@ function Contact({ contact }: ContactProps) {
             </li>
             <li className="mt-1.5 leading-normal text-gray-700 text-md">
               <a
-                href="https://github.com/joed"
+                href={`mailto:${contact.email}`}
+                className="group flex items-center gap-2"
+              >
+                <Mail className="w-5 inline-block print:text-black font-normal group-hover:text-gray-700 transition duration-100 ease-in" />
+                <span className="group-hover:underline">{contact.email}</span>
+                <span className="inline-block text-gray-550 font-normal group-hover:text-gray-700 transition duration-100 ease-in">
+                  ↗
+                </span>
+              </a>
+            </li>
+            <li className="mt-1.5 leading-normal text-gray-700 text-md">
+              <a
+                href={contact.linkedin}
+                className="group flex items-center gap-2"
+              >
+                <Linkedin className="w-5 inline-block print:text-black font-normal group-hover:text-gray-700 transition duration-100 ease-in" />
+                <span className="group-hover:underline">
+                  {contact.linkedin}
+                </span>
+                <span className="inline-block text-gray-550 font-normal group-hover:text-gray-700 transition duration-100 ease-in">
+                  ↗
+                </span>
+              </a>
+            </li>
+            <li className="mt-1.5 leading-normal text-gray-700 text-md">
+              <a
+                href={contact.github}
                 className="group flex gap-2"
                 target="_blank"
               >
@@ -33,11 +59,12 @@ function Contact({ contact }: ContactProps) {
             </li>
             <li className="mt-1.5 leading-normal text-gray-700 text-md">
               <a
-                href="mailto:shiyu.wang.dev@gmail.com"
-                className="group flex items-center gap-2"
+                href={contact.blog}
+                className="group flex gap-2"
+                target="_blank"
               >
-                <Mail className="w-5 inline-block print:text-black font-normal group-hover:text-gray-700 transition duration-100 ease-in" />
-                <span className="group-hover:underline">{contact.email}</span>
+                <ScrollText className="w-5 inline-block  print:text-black font-normal group-hover:text-gray-700 transition duration-100 ease-in" />
+                <span className="group-hover:underline">{contact.blog}</span>
                 <span className="inline-block text-gray-550 font-normal group-hover:text-gray-700 transition duration-100 ease-in">
                   ↗
                 </span>

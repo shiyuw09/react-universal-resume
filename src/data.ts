@@ -1,97 +1,116 @@
 import { IContact, IEducation, IProject, IWorkExperience } from '.';
 
+// Contact Information
 export const contactInfo: IContact = {
-  name: 'John Doe',
-  phone: '(123) 456-7890',
-  email: 'johndoe@gmail.com',
-  github: 'github.com/johndoe',
-  linkedin: 'linkedin.com/in/johndoe',
-  blog: 'johndoe.com',
+  name: "Jane 'Debugger' Doe",
+  phone: '555-COD-ER45',
+  email: 'debuggerjane@example.com',
+  github: 'https://github.com/debuggerjane',
+  linkedin: 'https://www.linkedin.com/in/debuggerjane/',
+  blog: 'https://bug-free-zone.dev',
 };
 
-/* Sample Education Info */
+// Education Information
 export const educationData: IEducation[] = [
   {
-    name: 'Stanford University',
-    degree: 'Master of Computer Science',
-    date: '2018 - 2020',
+    name: 'Hogwarts School of Witchcraft and Coding',
+    degree: 'Bachelor of Magic in Computer Science',
+    date: '2016-2020',
     courses: [
-      'Machine Learning',
-      'Natural Language Processing',
-      'Computer Vision',
+      'Potion++',
+      'Defense Against the Dark Bugs',
+      'Transfiguration of Data',
     ],
   },
   {
-    name: 'University of Michigan',
-    degree: 'Bachelor of Computer Science',
-    date: '2014 - 2018',
-    courses: ['Data Structures', 'Operating Systems', 'Web Development'],
+    name: 'Ninja Coding Dojo',
+    degree: 'Black Belt in Front-end Development',
+    date: '2021',
+    courses: ['Stealth JavaScript', 'React Shuriken', 'Tailwind Ninjutsu'],
   },
 ];
 
-/* Sample Project Info */
+// Project Information
 export const projectsInfo: IProject[] = [
   {
-    name: 'HealthMate',
+    name: 'E-Commerce on Mars',
+    description: 'Because Martians need online shopping too!',
+    date: '2022',
+    technologies: ['JavaScript', 'React', 'Tailwind CSS'],
+    github: 'https://github.com/debuggerjane/e-commerce-on-mars',
+    role: 'Front-end Astronaut',
+    responsibilities: [
+      "Developed UI that's so fast it feels like it's from another planet, boosting user engagement by 42%",
+      'Implemented state management that even Martians found simple to navigate, leading to fewer abandoned carts',
+      'Integrated Earth-to-Mars payment gateway; achieved a successful transaction latency of under 22 Martian minutes',
+    ],
+    company: 'MartianTech',
+  },
+  {
+    name: 'Task Manager for Time Travelers',
     description:
-      'A healthcare platform for tracking patient vitals and medical history.',
-    date: 'Jan 2020 – Apr 2020',
-    technologies: ['React', 'Node.js', 'MongoDB'],
-    github: 'https://github.com/username/HealthMate',
-    role: 'Back-End Developer',
+      'Never forget what you did yesterday, or will do 300 years from now.',
+    date: '2021',
+    technologies: ['JavaScript', 'React', 'Firebase'],
+    github: 'https://github.com/debuggerjane/task-manager-for-time-travelers',
+    role: 'Temporal Front-end Developer',
     responsibilities: [
-      'Implemented RESTful APIs for patient data management.',
-      'Integrated authentication and authorization using JWT.',
-      'Wrote unit tests using Jest and Mocha.',
+      'Designed a UI that adapts to fashion trends across eras, increasing user retention in the Middle Ages by 13%',
+      'Created a Firestore database schema to accommodate tasks in various timelines; reduced paradoxes by 26%',
+      'Implemented OAuth with 4D secure authentication; reduced unauthorized timeline alterations by 99%',
     ],
-    company: 'Stanford University',
-  },
-  {
-    name: 'Budgetify',
-    description: 'A budget management app for personal finance.',
-    date: 'May 2020 – July 2020',
-    technologies: ['Flutter', 'Firebase', 'Dart'],
-    github: 'https://github.com/username/Budgetify',
-    role: 'Mobile App Developer',
-    responsibilities: [
-      'Designed and implemented the app UI using Flutter.',
-      'Integrated Firebase for real-time data sync across devices.',
-      'Set up GitHub Actions for CI/CD.',
-    ],
-    company: 'Self',
+    company: 'XYZ-Timelines Inc',
   },
 ];
 
-/* Sample Work Experience Info - Internships */
-export const experienceIntern: IWorkExperience[] = [
-  {
-    type: 'internship',
-    company: 'Facebook, USA',
-    role: 'Software Engineer Intern',
-    date: 'May 2019 – Aug 2019',
-    companyDescription: 'Worked in the social graph team.',
-    technologies: ['Python', 'GraphQL'],
-    responsibilities: [
-      'Implemented features for the social graph.',
-      'Optimized database queries for performance.',
-    ],
-    responsibilitySummary: 'Worked on back-end features and optimizations.',
-  },
-];
-
-/* Sample Work Experience Info - Full-Time Jobs */
+// Work Experience Information
 export const experienceWork: IWorkExperience[] = [
   {
     type: 'work experience',
-    company: 'Google, USA',
-    role: 'Software Engineer',
-    date: 'Jan 2021 - Present',
-    companyDescription: 'Working in the Search team.',
-    technologies: ['C++', 'Python'],
+    company: 'The Avengers of Tech',
+    role: 'Front-end Superhero',
+    date: '2022-Present',
+    companyDescription:
+      'When bugs threaten the world, we are the ones to call.',
+    technologies: ['JavaScript', 'React', 'Tailwind CSS'],
     responsibilities: [
-      'Implemented new features for Google Search.',
-      'Worked on code optimizations for low-latency searching.',
+      'Built a dashboard faster than Quicksilver, improving load time by 60%',
+      "Led performance optimization tasks; web apps now feel as light as Thor's hammer (to Thor, not to you)",
+      "Used React context API to manage global state, reducing re-render faster than Thanos' snap",
     ],
-    responsibilitySummary: 'Full-stack developer in the Search team.',
+    responsibilitySummary: 'Saving the world, one line of code at a time.',
+  },
+  {
+    type: 'work experience',
+    company: 'Pirate Code Inc',
+    role: 'Front-end Swashbuckler',
+    date: '2021-2022',
+    companyDescription: 'Where coding meets the high seas.',
+    technologies: ['JavaScript', 'React'],
+    responsibilities: [
+      "Developed the UI using a treasure map as a wireframe; increased user 'arrrr-rate' by 33%",
+      'Integrated ship-to-ship messaging API; reduced miscommunication during boardings by 47%',
+      'Wrote custom Hooks that even Captain Hook found useful; reduced boilerplate by 25%',
+    ],
+    responsibilitySummary:
+      'Developed the front-end while sailing through agile sprints and avoiding actual sprints.',
+  },
+];
+
+export const experienceIntern: IWorkExperience[] = [
+  {
+    type: 'Internship',
+    company: 'Jurassic Systems',
+    role: 'Junior Dino Developer',
+    date: '2020-2021',
+    companyDescription: 'We brought the dinosaurs back, now we need a website.',
+    technologies: ['HTML', 'CSS', 'JavaScript'],
+    responsibilities: [
+      "Maintained a website that's older than some of the dinosaurs; improved SEO ranking from Cretaceous to Jurassic era",
+      'Fixed a critical bug that occasionally let the T-Rex out; incidents reduced by 100%',
+      "Optimized loading time so it's faster than a Velociraptor; improved user experience significantly",
+    ],
+    responsibilitySummary:
+      'Survived a year without becoming dino dinner, while making the site better.',
   },
 ];
