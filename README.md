@@ -1,10 +1,12 @@
 # React Universal Resume
 
-
-
 **THIS PROJECT IS STILL IN PROGRESS**
 
-----------------------------------------------------------------------------
+---
+
+## Demo
+
+https://react-universal-resume.vercel.app/
 
 ## 📝 Brief Introduction
 
@@ -42,6 +44,12 @@
 
 Visit `http://localhost:5173/` to view the app.
 
+## 💾 Populate with your own information
+
+- Find the `data.ts` file in the `src` directory, change the sample data in this file.
+
+- Open `App.tsx` file, change the order of the individual components or add/remove certain components according to your own needs.
+
 ## 🚢 Deployment
 
 The project is hosted on Vercel. Follow Vercel's [deployment instructions](https://vercel.com/docs/deployments/overview) to deploy your version.
@@ -75,4 +83,3 @@ ShareAlike — If you remix, transform, or build upon the material, you must dis
 - ![Lucide icons](https://lucide.dev/logo.light.svg)[Lucide Icons: Beautiful & consistent icons](https://lucide.dev/)
 
 - [FiraGO Font](https://bboxtype.com/typefaces/FiraGO/)
-
