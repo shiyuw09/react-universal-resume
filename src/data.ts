@@ -57,7 +57,9 @@ export const projectsInfo: IProject[] = [
     responsibilities: [
       'Designed a UI that adapts to fashion trends across eras, increasing user retention in the Middle Ages by 13%',
       'Created a Firestore database schema to accommodate tasks in various timelines; reduced paradoxes by 26%',
-      'Implemented OAuth with 4D secure authentication; reduced unauthorized timeline alterations by 99%'
+      'Implemented OAuth with 4D secure authentication; reduced unauthorized timeline alterations by 99%',
+      'Integrated ship-to-ship messaging API; reduced miscommunication during boardings by 47%',
+      'Wrote custom Hooks that even Captain Hook found useful; reduced boilerplate by 25%'
     ],
     company: 'XYZ-Timelines Inc'
   }
@@ -121,7 +123,9 @@ export const experienceWork: IWorkExperience[] = [
     responsibilities: [
       'Built an AI-powered chatbot to distribute relief information during natural disasters, cutting through red tape like a lightsaber through butter',
       'Developed a real-time translation feature, shattering language barriers and allowing global teams to collaborate instantaneously',
-      'Coordinated weekly Hacktivist Events; coding solutions for local community problems'
+      'Coordinated weekly Hacktivist Events; coding solutions for local community problems',
+      'Integrated ship-to-ship messaging API; reduced miscommunication during boardings by 47%',
+      'Wrote custom Hooks that even Captain Hook found useful; reduced boilerplate by 25%'
     ],
     responsibilitySummary: 'Saving the world one git commit at a time.'
   },
