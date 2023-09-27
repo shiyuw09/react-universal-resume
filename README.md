@@ -1,9 +1,5 @@
 # React Universal Resume
 
-**THIS PROJECT IS STILL IN PROGRESS**
-
----
-
 ## Demo
 
 https://react-universal-resume.vercel.app/
