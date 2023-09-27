@@ -17,7 +17,7 @@ function Experience({ expArray }: ExperienceProps) {
         {expArray.map((exp: IWorkExperience, index: number) => (
           <section key={index} className="mb-4.5 break-inside-avoid">
             <header>
-              <div className="flex flex-col justify-between md:flex-row">
+              <div className="flex flex-col justify-between print:flex-row md:flex-row">
                 <h3 className="group mb-2.1 text-lg font-semibold italic leading-snugish text-gray-700">
                   {exp.role}
                 </h3>

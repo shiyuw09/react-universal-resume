@@ -16,7 +16,7 @@ function Project({ projects }: ProjectProps) {
         {projects.map((project: IProject, index: number) => (
           <section key={index} className="mb-4.5 break-inside-avoid">
             <header>
-              <div className="flex flex-col justify-between md:flex-row">
+              <div className="flex flex-col justify-between print:flex-row md:flex-row">
                 <h3 className=" mb-2.1 text-lg font-semibold leading-snugish text-gray-700">
                   <a href={project.github} target="_blank" className="group">
                     {project.name}

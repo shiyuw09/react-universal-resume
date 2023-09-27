@@ -20,7 +20,8 @@ function App() {
     <>
       <main className="mx-auto text-left font-firago">
         {/* Page */}
-        <div className="page mx-auto max-w-2xl bg-white px-0 py-4 print:max-w-a4 xsm:p-8 sm:p-9 md:h-a4 md:max-w-a4 md:p-16">
+
+        <div className="page mx-auto max-w-2xl bg-white p-6 print:max-w-a4 xsm:p-8 sm:p-9 md:h-a4 md:max-w-a4 md:p-16">
           {/* Name */}
           <header className="mb-8 md:mb-11">
             <h1 className="pb-px text-center text-2xl font-semibold text-gray-750">
@@ -39,14 +40,14 @@ function App() {
         {/* end Page */}
 
         {/* Page */}
-        <div className="page mx-auto max-w-2xl bg-white p-6 px-0 py-4 print:mt-16 print:max-w-a4 xsm:p-8 sm:p-9 md:h-a4 md:max-w-a4 md:p-16">
+        <div className="page mx-auto max-w-2xl bg-gray-100 p-6 print:mt-2 print:max-w-a4 print:bg-white xsm:p-8 sm:p-9 md:h-a4 md:max-w-a4 md:p-16">
           <div className="print:h-a4-col-full md:h-a4-col-full">
             <Experience expArray={experienceWork} />
             <Skills skills={skills} />
             <Contact contact={contactInfo} />
           </div>
-          <Footer />
         </div>
+        <Footer />
         {/* end Page */}
       </main>
     </>

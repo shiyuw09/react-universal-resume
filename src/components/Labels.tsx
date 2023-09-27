@@ -9,7 +9,8 @@ function Labels({ labels }: LabelProps) {
         {labels.map((label: string, index: number) => (
           <li
             key={index}
-            className="print:border-inset mb-1.6 mr-1.6 bg-gray-200 px-2.5 text-base text-gray-750 print:bg-white">
+            className="border-red-700-750 print:shadow-inset mb-1.6 mr-1.6 bg-gray-250 px-2.5 text-base leading-relaxed
+             text-gray-750 print:bg-white">
             {label}
           </li>
         ))}

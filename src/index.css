@@ -3,10 +3,6 @@
 @tailwind components;
 @tailwind utilities;
 
-@import 'tailwindcss/base';
-@import 'tailwindcss/components';
-@import 'tailwindcss/utilities';
-
 @screen print {
   @page {
     margin-top: 0in;
@@ -17,7 +13,7 @@
 
   body {
     -webkit-print-color-adjust: exact !important;
-    color-adjust: exact !important;
+    print-color-adjust: exact !important;
     color: black !important;
   }
 

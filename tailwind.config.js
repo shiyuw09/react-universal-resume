@@ -61,6 +61,9 @@ export default {
           ...defaultTheme.colors.gray,
         },
       },
+      boxShadow: {
+        'inset': 'inset 0 0 0 1px rgba(50, 50, 50, 0.3)',
+      }
     },
   },
   plugins: [],
