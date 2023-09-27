@@ -5,6 +5,7 @@ export interface IContact {
   github: string;
   linkedin: string;
   blog: string;
+  aboutMe: string;
 }
 export interface IEducation {
   name: string;

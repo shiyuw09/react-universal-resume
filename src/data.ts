@@ -7,7 +7,10 @@ export const contactInfo: IContact = {
   email: 'debuggerjane@example.com',
   github: 'https://github.com/debuggerjane',
   linkedin: 'https://www.linkedin.com/in/jane/',
-  blog: 'https://bug-free-zone.dev'
+  blog: 'https://bug-free-zone.dev',
+  aboutMe: `Front-end developer by day, code superhero by night! With a passion
+  for clean, efficient design, I bring ideas to life one pixel at a
+  time. Making the web a better place, one div at a time.`
 };
 
 // Education Information
