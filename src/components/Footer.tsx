@@ -35,7 +35,7 @@ function Footer() {
         </div>
       </div>
       <p className="text-center text-xs italic text-gray-650">
-        Last updated: 25 Sep, 2023
+        Last updated: 27 Sep, 2023
       </p>
     </footer>
   );
