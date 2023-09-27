@@ -12,31 +12,41 @@ import {
   experienceWork,
   contactInfo,
   projectsInfo,
-  skills,
+  skills
 } from './data';
 
 function App() {
   return (
     <>
-      <main className="font-firago mx-auto text-left">
+      <main className="mx-auto text-left font-firago">
         {/* Page */}
-        <div className="bg-white p-6 mx-auto max-w-2xl print:max-w-a4 md:max-w-a4 md:p-16">
+        <div className="page mx-auto max-w-2xl bg-white px-0 py-4 print:max-w-a4 xsm:p-8 sm:p-9 md:h-a4 md:max-w-a4 md:p-16">
           {/* Name */}
-          <header className="mb-8">
-            <h1 className="text-2xl font-semibold text-gray-750 pb-px text-center">
+          <header className="mb-8 md:mb-11">
+            <h1 className="pb-px text-center text-2xl font-semibold text-gray-750">
               {contactInfo.name}
             </h1>
           </header>
           {/* end Name */}
-          <AboutMe />
-          <Skills skills={skills} />
-          <Education eduArray={educationData} />
-          <Project projects={projectsInfo} />
-          <Experience expArray={experienceIntern} />
-          <Experience expArray={experienceWork} />
-          <Contact contact={contactInfo} />
+
+          <div className="print:h-a4-col-full md:h-a4-col-full">
+            <AboutMe />
+            <Education eduArray={educationData} />
+            <Project projects={projectsInfo} />
+            <Experience expArray={experienceIntern} />
+          </div>
         </div>
-        <Footer />
+        {/* end Page */}
+
+        {/* Page */}
+        <div className="page mx-auto max-w-2xl bg-white p-6 px-0 py-4 print:mt-16 print:max-w-a4 xsm:p-8 sm:p-9 md:h-a4 md:max-w-a4 md:p-16">
+          <div className="print:h-a4-col-full md:h-a4-col-full">
+            <Experience expArray={experienceWork} />
+            <Skills skills={skills} />
+            <Contact contact={contactInfo} />
+          </div>
+          <Footer />
+        </div>
         {/* end Page */}
       </main>
     </>

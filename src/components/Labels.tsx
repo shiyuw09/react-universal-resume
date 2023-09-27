@@ -5,12 +5,11 @@ interface LabelProps {
 function Labels({ labels }: LabelProps) {
   return (
     <div>
-      <ul className="flex flex-wrap text-md leading-relaxed -mr-1.6 -mb-1.6">
+      <ul className="-mr-1.6 mb-1.6 flex flex-wrap text-md leading-relaxed md:-mb-1.6">
         {labels.map((label: string, index: number) => (
           <li
             key={index}
-            className="px-2.5 mr-1.6 mb-1.6 text-base text-gray-750 print:bg-white print:border-inset bg-gray-200"
-          >
+            className="print:border-inset mb-1.6 mr-1.6 bg-gray-200 px-2.5 text-base text-gray-750 print:bg-white">
             {label}
           </li>
         ))}

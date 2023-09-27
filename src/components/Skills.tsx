@@ -14,13 +14,11 @@ function Skills({ skills }: skillsProps) {
           // group by level
           <li
             key={skillOb.level}
-            className={`capitalize ${index < 2 ? 'h-7' : ''}`}
-          >
-            <div className="flex">
-              <p className="text-gray-700 leading-normal mr-3 absolute font-semibold">{`${skillOb.level}:`}</p>
-              <p className="text-gray-700 leading-normal ml-24">
-                {skillOb.skills.join(', ')}
-              </p>
+            // className={`capitalize ${index < 2 ? 'h-7' : ''}`}>
+            className="capitalize">
+            <div className="my-1 flex flex-col sm:flex-row">
+              <div className="font-semibold leading-normal text-gray-700 md:w-[100px]">{`${skillOb.level}:`}</div>
+              <div className="text-gray-700">{skillOb.skills.join(', ')}</div>
             </div>
           </li>
         ))}
