@@ -40,7 +40,7 @@ function App() {
         {/* end Page */}
 
         {/* Page */}
-        <div className="page mx-auto max-w-2xl bg-gray-100 p-6 print:mt-2 print:max-w-a4 print:bg-white xsm:p-8 sm:p-9 md:h-a4 md:max-w-a4 md:p-16">
+        <div className="page mx-auto max-w-2xl bg-gray-100 p-6 print:mt-16 print:max-w-a4 print:bg-white xsm:p-8 sm:p-9 md:h-a4 md:max-w-a4 md:p-16">
           <div className="print:h-a4-col md:h-a4-col">
             <Experience expArray={experienceWork} />
             <Skills skills={skills} />
